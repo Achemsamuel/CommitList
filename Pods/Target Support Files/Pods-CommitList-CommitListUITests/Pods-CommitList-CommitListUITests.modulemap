@@ -1,0 +1,6 @@
+framework module Pods_CommitList_CommitListUITests {
+  umbrella header "Pods-CommitList-CommitListUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

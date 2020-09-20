@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68B9EF13665470FEE47EEA07 /* Pods_CommitList_CommitListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED3FB1CCF2CD5EFFCBC31B2 /* Pods_CommitList_CommitListUITests.framework */; };
+		A832F8F2B7866B0AB4595691 /* Pods_CommitList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774010C596193F689DFEA2EA /* Pods_CommitList.framework */; };
 		D9145B1F25177E9E001F1DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B1E25177E9E001F1DC7 /* AppDelegate.swift */; };
 		D9145B2125177E9E001F1DC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B2025177E9E001F1DC7 /* SceneDelegate.swift */; };
-		D9145B2325177E9E001F1DC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B2225177E9E001F1DC7 /* ViewController.swift */; };
 		D9145B2625177E9E001F1DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9145B2425177E9E001F1DC7 /* Main.storyboard */; };
 		D9145B2825177EA3001F1DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9145B2725177EA3001F1DC7 /* Assets.xcassets */; };
 		D9145B2B25177EA3001F1DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9145B2925177EA3001F1DC7 /* LaunchScreen.storyboard */; };
 		D9145B3625177EA3001F1DC7 /* CommitListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B3525177EA3001F1DC7 /* CommitListTests.swift */; };
 		D9145B4125177EA3001F1DC7 /* CommitListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B4025177EA3001F1DC7 /* CommitListUITests.swift */; };
+		D9145B552517812C001F1DC7 /* CommitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B542517812C001F1DC7 /* CommitListViewModel.swift */; };
+		D9145B582517814B001F1DC7 /* CommitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B572517814B001F1DC7 /* CommitListViewController.swift */; };
+		D9145B5A25178176001F1DC7 /* CommitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B5925178176001F1DC7 /* CommitResponse.swift */; };
+		D9145B5C2517818D001F1DC7 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B5B2517818D001F1DC7 /* Commit.swift */; };
+		D9145B5E2517819F001F1DC7 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B5D2517819F001F1DC7 /* Verification.swift */; };
+		DAE5CB3592392F46030D8327 /* Pods_CommitListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054ACAC5225055061DCDD269 /* Pods_CommitListTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054ACAC5225055061DCDD269 /* Pods_CommitListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommitListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAC2114DB80053D9969CE5A /* Pods-CommitList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitList.release.xcconfig"; path = "Target Support Files/Pods-CommitList/Pods-CommitList.release.xcconfig"; sourceTree = "<group>"; };
+		1ED3FB1CCF2CD5EFFCBC31B2 /* Pods_CommitList_CommitListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommitList_CommitListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D5EBE14F9EC1207CAC9B9D /* Pods-CommitListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitListTests.release.xcconfig"; path = "Target Support Files/Pods-CommitListTests/Pods-CommitListTests.release.xcconfig"; sourceTree = "<group>"; };
+		64F4D89E1B26666CC0C561A5 /* Pods-CommitList-CommitListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitList-CommitListUITests.debug.xcconfig"; path = "Target Support Files/Pods-CommitList-CommitListUITests/Pods-CommitList-CommitListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		774010C596193F689DFEA2EA /* Pods_CommitList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommitList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813AC4B2B7AF4B8193087348 /* Pods-CommitList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitList.debug.xcconfig"; path = "Target Support Files/Pods-CommitList/Pods-CommitList.debug.xcconfig"; sourceTree = "<group>"; };
+		A0818BD0C69ED16EF2F5FDCB /* Pods-CommitList-CommitListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitList-CommitListUITests.release.xcconfig"; path = "Target Support Files/Pods-CommitList-CommitListUITests/Pods-CommitList-CommitListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0F52E7F64FAB1A173DD170E /* Pods-CommitListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitListTests.debug.xcconfig"; path = "Target Support Files/Pods-CommitListTests/Pods-CommitListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9145B1B25177E9E001F1DC7 /* CommitList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9145B1E25177E9E001F1DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9145B2025177E9E001F1DC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9145B2225177E9E001F1DC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9145B2525177E9E001F1DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9145B2725177EA3001F1DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9145B2A25177EA3001F1DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +64,11 @@
 		D9145B3C25177EA3001F1DC7 /* CommitListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommitListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9145B4025177EA3001F1DC7 /* CommitListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitListUITests.swift; sourceTree = "<group>"; };
 		D9145B4225177EA3001F1DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9145B542517812C001F1DC7 /* CommitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitListViewModel.swift; sourceTree = "<group>"; };
+		D9145B572517814B001F1DC7 /* CommitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitListViewController.swift; sourceTree = "<group>"; };
+		D9145B5925178176001F1DC7 /* CommitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitResponse.swift; sourceTree = "<group>"; };
+		D9145B5B2517818D001F1DC7 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		D9145B5D2517819F001F1DC7 /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A832F8F2B7866B0AB4595691 /* Pods_CommitList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE5CB3592392F46030D8327 /* Pods_CommitListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B9EF13665470FEE47EEA07 /* Pods_CommitList_CommitListUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07958B48942E9B560A0800AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				774010C596193F689DFEA2EA /* Pods_CommitList.framework */,
+				1ED3FB1CCF2CD5EFFCBC31B2 /* Pods_CommitList_CommitListUITests.framework */,
+				054ACAC5225055061DCDD269 /* Pods_CommitListTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9AB1601BBE86D15E9860115 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				813AC4B2B7AF4B8193087348 /* Pods-CommitList.debug.xcconfig */,
+				0CAC2114DB80053D9969CE5A /* Pods-CommitList.release.xcconfig */,
+				64F4D89E1B26666CC0C561A5 /* Pods-CommitList-CommitListUITests.debug.xcconfig */,
+				A0818BD0C69ED16EF2F5FDCB /* Pods-CommitList-CommitListUITests.release.xcconfig */,
+				A0F52E7F64FAB1A173DD170E /* Pods-CommitListTests.debug.xcconfig */,
+				56D5EBE14F9EC1207CAC9B9D /* Pods-CommitListTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D9145B1225177E9E001F1DC7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				D9145B3425177EA3001F1DC7 /* CommitListTests */,
 				D9145B3F25177EA3001F1DC7 /* CommitListUITests */,
 				D9145B1C25177E9E001F1DC7 /* Products */,
+				B9AB1601BBE86D15E9860115 /* Pods */,
+				07958B48942E9B560A0800AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +149,10 @@
 			children = (
 				D9145B1E25177E9E001F1DC7 /* AppDelegate.swift */,
 				D9145B2025177E9E001F1DC7 /* SceneDelegate.swift */,
-				D9145B2225177E9E001F1DC7 /* ViewController.swift */,
-				D9145B2425177E9E001F1DC7 /* Main.storyboard */,
+				D9145B4E251780BB001F1DC7 /* Networking */,
+				D9145B4F251780C6001F1DC7 /* Models */,
+				D9145B50251780CB001F1DC7 /* Views */,
+				D9145B52251780E0001F1DC7 /* ViewModels */,
 				D9145B2725177EA3001F1DC7 /* Assets.xcassets */,
 				D9145B2925177EA3001F1DC7 /* LaunchScreen.storyboard */,
 				D9145B2C25177EA3001F1DC7 /* Info.plist */,
@@ -128,6 +178,56 @@
 			path = CommitListUITests;
 			sourceTree = "<group>";
 		};
+		D9145B4E251780BB001F1DC7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D9145B4F251780C6001F1DC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9145B5925178176001F1DC7 /* CommitResponse.swift */,
+				D9145B5B2517818D001F1DC7 /* Commit.swift */,
+				D9145B5D2517819F001F1DC7 /* Verification.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9145B50251780CB001F1DC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9145B2425177E9E001F1DC7 /* Main.storyboard */,
+				D9145B5325178102001F1DC7 /* CommitList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9145B52251780E0001F1DC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D9145B542517812C001F1DC7 /* CommitListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D9145B5325178102001F1DC7 /* CommitList */ = {
+			isa = PBXGroup;
+			children = (
+				D9145B5625178138001F1DC7 /* Xibs */,
+				D9145B572517814B001F1DC7 /* CommitListViewController.swift */,
+			);
+			path = CommitList;
+			sourceTree = "<group>";
+		};
+		D9145B5625178138001F1DC7 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9145B4525177EA3001F1DC7 /* Build configuration list for PBXNativeTarget "CommitList" */;
 			buildPhases = (
+				F376E0747481CD2317CE88F0 /* [CP] Check Pods Manifest.lock */,
 				D9145B1725177E9E001F1DC7 /* Sources */,
 				D9145B1825177E9E001F1DC7 /* Frameworks */,
 				D9145B1925177E9E001F1DC7 /* Resources */,
+				1515B7A00E5B374654B3CD63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9145B4825177EA3001F1DC7 /* Build configuration list for PBXNativeTarget "CommitListTests" */;
 			buildPhases = (
+				EBF763BA7284FED1BA8F6F4A /* [CP] Check Pods Manifest.lock */,
 				D9145B2D25177EA3001F1DC7 /* Sources */,
 				D9145B2E25177EA3001F1DC7 /* Frameworks */,
 				D9145B2F25177EA3001F1DC7 /* Resources */,
@@ -170,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9145B4B25177EA3001F1DC7 /* Build configuration list for PBXNativeTarget "CommitListUITests" */;
 			buildPhases = (
+				B60FECF7E150B44E8DB792F9 /* [CP] Check Pods Manifest.lock */,
 				D9145B3825177EA3001F1DC7 /* Sources */,
 				D9145B3925177EA3001F1DC7 /* Frameworks */,
 				D9145B3A25177EA3001F1DC7 /* Resources */,
+				5EED71B58F0542A190CC8C23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +359,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1515B7A00E5B374654B3CD63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommitList/Pods-CommitList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommitList/Pods-CommitList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommitList/Pods-CommitList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EED71B58F0542A190CC8C23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommitList-CommitListUITests/Pods-CommitList-CommitListUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommitList-CommitListUITests/Pods-CommitList-CommitListUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommitList-CommitListUITests/Pods-CommitList-CommitListUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60FECF7E150B44E8DB792F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommitList-CommitListUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF763BA7284FED1BA8F6F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommitListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F376E0747481CD2317CE88F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommitList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9145B1725177E9E001F1DC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9145B2325177E9E001F1DC7 /* ViewController.swift in Sources */,
+				D9145B5C2517818D001F1DC7 /* Commit.swift in Sources */,
+				D9145B552517812C001F1DC7 /* CommitListViewModel.swift in Sources */,
+				D9145B582517814B001F1DC7 /* CommitListViewController.swift in Sources */,
 				D9145B1F25177E9E001F1DC7 /* AppDelegate.swift in Sources */,
+				D9145B5E2517819F001F1DC7 /* Verification.swift in Sources */,
+				D9145B5A25178176001F1DC7 /* CommitResponse.swift in Sources */,
 				D9145B2125177E9E001F1DC7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +644,7 @@
 		};
 		D9145B4625177EA3001F1DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 813AC4B2B7AF4B8193087348 /* Pods-CommitList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +663,7 @@
 		};
 		D9145B4725177EA3001F1DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CAC2114DB80053D9969CE5A /* Pods-CommitList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +682,7 @@
 		};
 		D9145B4925177EA3001F1DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0F52E7F64FAB1A173DD170E /* Pods-CommitListTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +705,7 @@
 		};
 		D9145B4A25177EA3001F1DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D5EBE14F9EC1207CAC9B9D /* Pods-CommitListTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +728,7 @@
 		};
 		D9145B4C25177EA3001F1DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F4D89E1B26666CC0C561A5 /* Pods-CommitList-CommitListUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +749,7 @@
 		};
 		D9145B4D25177EA3001F1DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0818BD0C69ED16EF2F5FDCB /* Pods-CommitList-CommitListUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
