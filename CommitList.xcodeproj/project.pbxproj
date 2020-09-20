@@ -21,6 +21,11 @@
 		D9145B5A25178176001F1DC7 /* CommitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B5925178176001F1DC7 /* CommitResponse.swift */; };
 		D9145B5C2517818D001F1DC7 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B5B2517818D001F1DC7 /* Commit.swift */; };
 		D9145B5E2517819F001F1DC7 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B5D2517819F001F1DC7 /* Verification.swift */; };
+		D9145B6025178492001F1DC7 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B5F25178492001F1DC7 /* Tree.swift */; };
+		D9145B62251784A2001F1DC7 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B61251784A2001F1DC7 /* Author.swift */; };
+		D9145B64251784B6001F1DC7 /* Committer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B63251784B6001F1DC7 /* Committer.swift */; };
+		D9145B66251784CA001F1DC7 /* Parents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B65251784CA001F1DC7 /* Parents.swift */; };
+		D9145B6925178505001F1DC7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B6825178505001F1DC7 /* UITableView+Extension.swift */; };
 		DAE5CB3592392F46030D8327 /* Pods_CommitListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054ACAC5225055061DCDD269 /* Pods_CommitListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +74,11 @@
 		D9145B5925178176001F1DC7 /* CommitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitResponse.swift; sourceTree = "<group>"; };
 		D9145B5B2517818D001F1DC7 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		D9145B5D2517819F001F1DC7 /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		D9145B5F25178492001F1DC7 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		D9145B61251784A2001F1DC7 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		D9145B63251784B6001F1DC7 /* Committer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Committer.swift; sourceTree = "<group>"; };
+		D9145B65251784CA001F1DC7 /* Parents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parents.swift; sourceTree = "<group>"; };
+		D9145B6825178505001F1DC7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,7 @@
 				D9145B1E25177E9E001F1DC7 /* AppDelegate.swift */,
 				D9145B2025177E9E001F1DC7 /* SceneDelegate.swift */,
 				D9145B4E251780BB001F1DC7 /* Networking */,
+				D9145B67251784F1001F1DC7 /* Extensions */,
 				D9145B4F251780C6001F1DC7 /* Models */,
 				D9145B50251780CB001F1DC7 /* Views */,
 				D9145B52251780E0001F1DC7 /* ViewModels */,
@@ -191,6 +202,10 @@
 				D9145B5925178176001F1DC7 /* CommitResponse.swift */,
 				D9145B5B2517818D001F1DC7 /* Commit.swift */,
 				D9145B5D2517819F001F1DC7 /* Verification.swift */,
+				D9145B5F25178492001F1DC7 /* Tree.swift */,
+				D9145B61251784A2001F1DC7 /* Author.swift */,
+				D9145B63251784B6001F1DC7 /* Committer.swift */,
+				D9145B65251784CA001F1DC7 /* Parents.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,6 +241,14 @@
 			children = (
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		D9145B67251784F1001F1DC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9145B6825178505001F1DC7 /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,11 +492,16 @@
 			files = (
 				D9145B5C2517818D001F1DC7 /* Commit.swift in Sources */,
 				D9145B552517812C001F1DC7 /* CommitListViewModel.swift in Sources */,
+				D9145B64251784B6001F1DC7 /* Committer.swift in Sources */,
 				D9145B582517814B001F1DC7 /* CommitListViewController.swift in Sources */,
+				D9145B62251784A2001F1DC7 /* Author.swift in Sources */,
 				D9145B1F25177E9E001F1DC7 /* AppDelegate.swift in Sources */,
 				D9145B5E2517819F001F1DC7 /* Verification.swift in Sources */,
+				D9145B66251784CA001F1DC7 /* Parents.swift in Sources */,
+				D9145B6025178492001F1DC7 /* Tree.swift in Sources */,
 				D9145B5A25178176001F1DC7 /* CommitResponse.swift in Sources */,
 				D9145B2125177E9E001F1DC7 /* SceneDelegate.swift in Sources */,
+				D9145B6925178505001F1DC7 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
