@@ -730,9 +730,35 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5L94XRPVKN;
 				INFOPLIST_FILE = CommitList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FBSnapshotTestCase\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxRelay\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"XCTest\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.achemsamuel.CommitList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -749,9 +775,35 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5L94XRPVKN;
 				INFOPLIST_FILE = CommitList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FBSnapshotTestCase\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxRelay\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"XCTest\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.achemsamuel.CommitList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
