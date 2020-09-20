@@ -26,7 +26,6 @@
 		D9145B64251784B6001F1DC7 /* Committer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B63251784B6001F1DC7 /* Committer.swift */; };
 		D9145B66251784CA001F1DC7 /* Parents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B65251784CA001F1DC7 /* Parents.swift */; };
 		D9145B6925178505001F1DC7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B6825178505001F1DC7 /* UITableView+Extension.swift */; };
-		D9145B6C2517881C001F1DC7 /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B6B2517881C001F1DC7 /* ReachabilityHelper.swift */; };
 		D9145B6E25178A4A001F1DC7 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B6D25178A4A001F1DC7 /* ApiClient.swift */; };
 		D9145B7025178A59001F1DC7 /* HttpEndPointResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B6F25178A59001F1DC7 /* HttpEndPointResources.swift */; };
 		D9145B7225178A7E001F1DC7 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B7125178A7E001F1DC7 /* ApiError.swift */; };
@@ -92,7 +91,6 @@
 		D9145B63251784B6001F1DC7 /* Committer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Committer.swift; sourceTree = "<group>"; };
 		D9145B65251784CA001F1DC7 /* Parents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parents.swift; sourceTree = "<group>"; };
 		D9145B6825178505001F1DC7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		D9145B6B2517881C001F1DC7 /* ReachabilityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
 		D9145B6D25178A4A001F1DC7 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		D9145B6F25178A59001F1DC7 /* HttpEndPointResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpEndPointResources.swift; sourceTree = "<group>"; };
 		D9145B7125178A7E001F1DC7 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				D9145B1E25177E9E001F1DC7 /* AppDelegate.swift */,
 				D9145B2025177E9E001F1DC7 /* SceneDelegate.swift */,
 				D9145B4E251780BB001F1DC7 /* Networking */,
-				D9145B6A25178804001F1DC7 /* Helpers */,
 				D9145B8225179909001F1DC7 /* Constants */,
 				D9145B67251784F1001F1DC7 /* Extensions */,
 				D9145B4F251780C6001F1DC7 /* Models */,
@@ -288,14 +285,6 @@
 				D9145B872517A44B001F1DC7 /* UIVIew+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D9145B6A25178804001F1DC7 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				D9145B6B2517881C001F1DC7 /* ReachabilityHelper.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D9145B7D25178EEE001F1DC7 /* VMs */ = {
@@ -570,7 +559,6 @@
 				D9145B6E25178A4A001F1DC7 /* ApiClient.swift in Sources */,
 				D9145B882517A44B001F1DC7 /* UIVIew+Extension.swift in Sources */,
 				D9145B66251784CA001F1DC7 /* Parents.swift in Sources */,
-				D9145B6C2517881C001F1DC7 /* ReachabilityHelper.swift in Sources */,
 				D9145B6025178492001F1DC7 /* Tree.swift in Sources */,
 				D9145B7825178DA5001F1DC7 /* UITableViewCell+Extension.swift in Sources */,
 				D9145B5A25178176001F1DC7 /* CommitResponse.swift in Sources */,
