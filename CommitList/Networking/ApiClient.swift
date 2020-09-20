@@ -32,7 +32,12 @@ final class ApiClient: NSObject {
             case .success(let data):
                 do {
                     let commits = try JSONDecoder().decode([CommitResponse].self, from: data)
-                    completion(.success(commits))
+                    if commits.count > 25 {
+                        let newCommits = Array(commits.prefix(25))
+                        completion(.success(newCommits))
+                    } else {
+                        completion(.success(commits))
+                    }
                 }
                 catch {
                     completion(.failure(error))

@@ -7,9 +7,9 @@ target 'CommitList' do
 
   # Pods for CommitList
    pod 'iOSSnapshotTestCase'
-   pod 'Kingfisher', '~> 5.0'
    pod 'RxSwift'
    pod 'RxCocoa'
+   pod 'SDWebImage'
 
   target 'CommitListTests' do
     inherit! :search_paths

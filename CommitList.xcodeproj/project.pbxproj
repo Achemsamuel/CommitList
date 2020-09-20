@@ -38,6 +38,7 @@
 		D9145B8425179922001F1DC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B8325179922001F1DC7 /* Constants.swift */; };
 		D9145B8625179E42001F1DC7 /* shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B8525179E42001F1DC7 /* shared.swift */; };
 		D9145B882517A44B001F1DC7 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B872517A44B001F1DC7 /* UIVIew+Extension.swift */; };
+		D9145B8A2517AF8E001F1DC7 /* CommitListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B892517AF8E001F1DC7 /* CommitListViewControllerTest.swift */; };
 		DAE5CB3592392F46030D8327 /* Pods_CommitListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054ACAC5225055061DCDD269 /* Pods_CommitListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		D9145B8325179922001F1DC7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D9145B8525179E42001F1DC7 /* shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shared.swift; sourceTree = "<group>"; };
 		D9145B872517A44B001F1DC7 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		D9145B892517AF8E001F1DC7 /* CommitListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitListViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			children = (
 				D9145B3525177EA3001F1DC7 /* CommitListTests.swift */,
 				D9145B3725177EA3001F1DC7 /* Info.plist */,
+				D9145B892517AF8E001F1DC7 /* CommitListViewControllerTest.swift */,
 			);
 			path = CommitListTests;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9145B3625177EA3001F1DC7 /* CommitListTests.swift in Sources */,
+				D9145B8A2517AF8E001F1DC7 /* CommitListViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,8 +770,6 @@
 					"-framework",
 					"\"Foundation\"",
 					"-framework",
-					"\"Kingfisher\"",
-					"-framework",
 					"\"QuartzCore\"",
 					"-framework",
 					"\"RxCocoa\"",
@@ -810,8 +812,6 @@
 					"\"FBSnapshotTestCase\"",
 					"-framework",
 					"\"Foundation\"",
-					"-framework",
-					"\"Kingfisher\"",
 					"-framework",
 					"\"QuartzCore\"",
 					"-framework",

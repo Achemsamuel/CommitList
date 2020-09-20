@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 final class CommitListViewController: UIViewController {
-
+    
     private(set) var disposeBag: DisposeBag!
     private(set) var viewModel: CommitListViewModel?
     private(set) var refreshControl: UIRefreshControl?
@@ -35,10 +35,11 @@ final class CommitListViewController: UIViewController {
         setupTableView()
         self.title = Constants.recentCommits
     }
-
+    
     private func setupTableView() {
         tableView.refreshControl = refreshControl
         tableView.refreshControl?.beginRefreshing()
+        refreshControl?.addTarget(self, action: #selector(didBeginRefreshing), for: .valueChanged)
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: CommitListTableViewCell.NIB_NAME, bundle: nil), forCellReuseIdentifier: CommitListTableViewCell.Identifier)
@@ -54,13 +55,17 @@ final class CommitListViewController: UIViewController {
         viewModel?.rx_setEmptyStateViewVisiblity.asObservable().subscribe(onNext: { [weak self] emptyStateReason in
             switch emptyStateReason {
             case .fetchError(let error):
-                 self?.tableView.setEmptyView(message: error, imageSize: 170)
+                self?.tableView.setEmptyView(message: error, imageSize: 170)
             case .noCommit:
                 self?.tableView.setEmptyView(message: Constants.noCommits, imageSize: 170)
             case .noInternet:
                 self?.tableView.setEmptyView(message: Constants.noInternet, imageSize: 170)
             }
         }).disposed(by: disposeBag)
+    }
+    
+    @objc func didBeginRefreshing() {
+        viewModel?.fetchDataOnLoad()
     }
     
     deinit {

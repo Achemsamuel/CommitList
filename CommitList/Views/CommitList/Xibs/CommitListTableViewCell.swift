@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import SDWebImage
 
 final class CommitListTableViewCell: UITableViewCell {
 
@@ -20,6 +20,7 @@ final class CommitListTableViewCell: UITableViewCell {
     @IBOutlet weak private(set) var userName: UILabel!
     @IBOutlet weak private(set) var dateView: UIView!
     @IBOutlet weak private(set) var userView: UIView!
+    @IBOutlet weak private(set) var authorImage: UIImageView!
     
     
     
@@ -37,7 +38,14 @@ final class CommitListTableViewCell: UITableViewCell {
     
     func configureView(_ commitVM: CommitVM, _ row: Int) {
         self.row = row
-        //userImage.kf.setImage(with: commitVM.authorImageUrl, placeholder: UIImage(systemName: "person.circle"))
+        authorImage.sd_setImage(with: commitVM.authorImageUrl, placeholderImage: nil, options: .retryFailed) { [weak self] image, error, cache, url in
+            guard error == nil else {
+                return
+            }
+            let image = image
+            self?.userImage.image = image
+        }
+//        userImage.sd_setImage(with: commitVM.authorImageUrl, placeholderImage: UIImage(systemName: "person.circle"), options: SDWebImageOptions.retryFailed)
         userName.text = commitVM.authorName
         date.text = commitVM.date
         verifiedTag.text = "Verified: \(commitVM.verified)"

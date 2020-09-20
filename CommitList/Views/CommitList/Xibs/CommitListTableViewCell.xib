@@ -46,29 +46,36 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJE-wc-Nbd">
                                 <rect key="frame" x="0.0" y="31" width="280" height="59"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Character-clumsy" translatesAutoresizingMaskIntoConstraints="NO" id="Cvb-UX-1c1">
-                                        <rect key="frame" x="15" y="12" width="35" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="0hc-Ed-b8X"/>
-                                            <constraint firstAttribute="height" constant="35" id="ZFB-U9-Pfk"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srO-z8-0c8">
                                         <rect key="frame" x="60" y="19" width="210" height="21"/>
                                         <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LOR-xd-Pvb">
+                                        <rect key="frame" x="15" y="12" width="35" height="35"/>
+                                        <color key="tintColor" red="0.27058823529999998" green="0.30980392159999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="999" constant="35" id="dZ1-H3-s5A"/>
+                                            <constraint firstAttribute="width" priority="999" constant="35" id="fFE-Z7-bmr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s8K-dH-4Rd">
+                                        <rect key="frame" x="15" y="12" width="35" height="35"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="CommitListTableViewCellBackground"/>
                                 <constraints>
-                                    <constraint firstItem="Cvb-UX-1c1" firstAttribute="leading" secondItem="HJE-wc-Nbd" secondAttribute="leading" constant="15" id="207-14-1cf"/>
+                                    <constraint firstItem="LOR-xd-Pvb" firstAttribute="top" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="12" id="93X-en-8jv"/>
                                     <constraint firstAttribute="trailing" secondItem="srO-z8-0c8" secondAttribute="trailing" constant="10" id="95S-EI-t9C"/>
-                                    <constraint firstAttribute="bottom" secondItem="Cvb-UX-1c1" secondAttribute="bottom" constant="12" id="EQ7-z5-Wgr"/>
-                                    <constraint firstItem="Cvb-UX-1c1" firstAttribute="top" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="12" id="FTR-Vw-hWj"/>
-                                    <constraint firstItem="srO-z8-0c8" firstAttribute="leading" secondItem="Cvb-UX-1c1" secondAttribute="trailing" constant="10" id="MtW-XW-exa"/>
+                                    <constraint firstItem="srO-z8-0c8" firstAttribute="leading" secondItem="LOR-xd-Pvb" secondAttribute="trailing" constant="10" id="Hv9-k4-P0L"/>
+                                    <constraint firstAttribute="bottom" secondItem="s8K-dH-4Rd" secondAttribute="bottom" constant="12" id="Zx3-XM-7zj"/>
                                     <constraint firstItem="srO-z8-0c8" firstAttribute="bottom" secondItem="HJE-wc-Nbd" secondAttribute="bottom" constant="-19" id="hGf-IM-Yzp"/>
+                                    <constraint firstItem="s8K-dH-4Rd" firstAttribute="leading" secondItem="HJE-wc-Nbd" secondAttribute="leading" constant="15" id="jgx-8V-Quc"/>
+                                    <constraint firstAttribute="bottom" secondItem="LOR-xd-Pvb" secondAttribute="bottom" constant="12" id="lWC-cp-bqV"/>
                                     <constraint firstItem="srO-z8-0c8" firstAttribute="top" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="19" id="oGQ-bM-DVr"/>
-                                    <constraint firstItem="srO-z8-0c8" firstAttribute="centerY" secondItem="Cvb-UX-1c1" secondAttribute="centerY" id="w9G-fo-T2z"/>
+                                    <constraint firstItem="s8K-dH-4Rd" firstAttribute="top" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="12" id="qam-bF-5oH"/>
+                                    <constraint firstItem="srO-z8-0c8" firstAttribute="leading" secondItem="s8K-dH-4Rd" secondAttribute="trailing" constant="10" id="qx4-Nn-ZI9"/>
+                                    <constraint firstItem="LOR-xd-Pvb" firstAttribute="leading" secondItem="HJE-wc-Nbd" secondAttribute="leading" constant="15" id="sZi-Pb-Bxr"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -96,10 +103,11 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="authorImage" destination="s8K-dH-4Rd" id="wyH-Yv-AjA"/>
                 <outlet property="commitListCellContentView" destination="Yr5-Ps-7M6" id="zet-c8-6P3"/>
                 <outlet property="date" destination="njg-7t-Ero" id="mZI-5M-b9l"/>
                 <outlet property="dateView" destination="CzR-ZY-hot" id="JVU-qs-a0U"/>
-                <outlet property="userImage" destination="Cvb-UX-1c1" id="h8K-Wl-kr1"/>
+                <outlet property="userImage" destination="LOR-xd-Pvb" id="GZv-8S-j8o"/>
                 <outlet property="userName" destination="srO-z8-0c8" id="5bG-BM-cVq"/>
                 <outlet property="userView" destination="HJE-wc-Nbd" id="QhD-Yu-mMp"/>
                 <outlet property="verifiedTag" destination="fgg-1p-mHY" id="T0K-JM-Bsr"/>
@@ -108,9 +116,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Character-clumsy" width="158" height="125"/>
         <namedColor name="CommitListTableViewCellBackground">
-            <color red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="0.94999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CommitListbackgroundLighter">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

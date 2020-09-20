@@ -27,7 +27,7 @@ final class CommitListViewModel: NSObject {
         fetchDataOnLoad()
     }
     
-    private func fetchDataOnLoad() {
+    public func fetchDataOnLoad() {
         guard ReachabilityHelper.isInternetAvailable() else {
             self.rx_setEmptyStateViewVisiblity.onNext(EmptyStateReason.noInternet)
             return
