@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.0'
 
 target 'CommitList' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,9 +7,9 @@ target 'CommitList' do
 
   # Pods for CommitList
    pod 'iOSSnapshotTestCase'
-   pod 'Kingfisher', '~> 5.0'
    pod 'RxSwift'
    pod 'RxCocoa'
+   pod 'SDWebImage'
 
   target 'CommitListTests' do
     inherit! :search_paths

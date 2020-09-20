@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="CommitListTableViewCell" customModule="CommitList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yr5-Ps-7M6">
+                        <rect key="frame" x="20" y="15" width="280" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CzR-ZY-hot" userLabel="dateView">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-7t-Ero">
+                                        <rect key="frame" x="15" y="3" width="0.0" height="31"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgg-1p-mHY">
+                                        <rect key="frame" x="265" y="3" width="0.0" height="34"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="CommitListbackgroundLighter"/>
+                                <constraints>
+                                    <constraint firstItem="njg-7t-Ero" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="top" constant="3" id="398-SL-qac"/>
+                                    <constraint firstItem="fgg-1p-mHY" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="top" constant="3" id="GX1-3R-UMP"/>
+                                    <constraint firstAttribute="trailing" secondItem="fgg-1p-mHY" secondAttribute="trailing" constant="15" id="X3g-f9-NwI"/>
+                                    <constraint firstItem="fgg-1p-mHY" firstAttribute="bottom" secondItem="njg-7t-Ero" secondAttribute="bottom" constant="3" id="hSv-ty-82l"/>
+                                    <constraint firstItem="njg-7t-Ero" firstAttribute="leading" secondItem="CzR-ZY-hot" secondAttribute="leading" constant="15" id="rKM-iM-Fee"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJE-wc-Nbd">
+                                <rect key="frame" x="0.0" y="31" width="280" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srO-z8-0c8">
+                                        <rect key="frame" x="65" y="19" width="205" height="21"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="15"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s8K-dH-4Rd">
+                                        <rect key="frame" x="15" y="12" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="999" constant="35" id="2Mj-tV-Cy6"/>
+                                            <constraint firstAttribute="height" priority="999" constant="35" id="AY7-1G-ca7"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="CommitListTableViewCellBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="srO-z8-0c8" secondAttribute="trailing" constant="10" id="95S-EI-t9C"/>
+                                    <constraint firstAttribute="bottom" secondItem="s8K-dH-4Rd" secondAttribute="bottom" constant="12" id="Zx3-XM-7zj"/>
+                                    <constraint firstItem="srO-z8-0c8" firstAttribute="bottom" secondItem="HJE-wc-Nbd" secondAttribute="bottom" constant="-19" id="hGf-IM-Yzp"/>
+                                    <constraint firstItem="s8K-dH-4Rd" firstAttribute="leading" secondItem="HJE-wc-Nbd" secondAttribute="leading" constant="15" id="jgx-8V-Quc"/>
+                                    <constraint firstItem="srO-z8-0c8" firstAttribute="top" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="19" id="oGQ-bM-DVr"/>
+                                    <constraint firstItem="s8K-dH-4Rd" firstAttribute="top" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="12" id="qam-bF-5oH"/>
+                                    <constraint firstItem="srO-z8-0c8" firstAttribute="leading" secondItem="s8K-dH-4Rd" secondAttribute="trailing" constant="15" id="qx4-Nn-ZI9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="CommitListTableViewCellBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HJE-wc-Nbd" secondAttribute="trailing" id="0zc-Dj-k0s"/>
+                            <constraint firstItem="HJE-wc-Nbd" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="bottom" constant="-15" id="6K0-95-Vix"/>
+                            <constraint firstItem="CzR-ZY-hot" firstAttribute="leading" secondItem="Yr5-Ps-7M6" secondAttribute="leading" id="cGS-hU-A9m"/>
+                            <constraint firstItem="CzR-ZY-hot" firstAttribute="top" secondItem="Yr5-Ps-7M6" secondAttribute="top" id="hnU-VQ-cUF"/>
+                            <constraint firstItem="HJE-wc-Nbd" firstAttribute="leading" secondItem="Yr5-Ps-7M6" secondAttribute="leading" id="jCF-9o-bev"/>
+                            <constraint firstAttribute="trailing" secondItem="CzR-ZY-hot" secondAttribute="trailing" id="sbK-ax-ihj"/>
+                            <constraint firstItem="njg-7t-Ero" firstAttribute="bottom" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="3" id="tfN-aQ-oyt"/>
+                            <constraint firstAttribute="bottom" secondItem="HJE-wc-Nbd" secondAttribute="bottom" id="vq2-X8-JvN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Yr5-Ps-7M6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="779-iE-hSi"/>
+                    <constraint firstAttribute="trailing" secondItem="Yr5-Ps-7M6" secondAttribute="trailing" constant="20" id="9l6-E2-SxA"/>
+                    <constraint firstItem="Yr5-Ps-7M6" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-15" id="RR8-Mq-ICL"/>
+                    <constraint firstItem="Yr5-Ps-7M6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XXp-g3-9kw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorImage" destination="s8K-dH-4Rd" id="wyH-Yv-AjA"/>
+                <outlet property="commitListCellContentView" destination="Yr5-Ps-7M6" id="zet-c8-6P3"/>
+                <outlet property="date" destination="njg-7t-Ero" id="mZI-5M-b9l"/>
+                <outlet property="dateView" destination="CzR-ZY-hot" id="JVU-qs-a0U"/>
+                <outlet property="userName" destination="srO-z8-0c8" id="5bG-BM-cVq"/>
+                <outlet property="userView" destination="HJE-wc-Nbd" id="QhD-Yu-mMp"/>
+                <outlet property="verifiedTag" destination="fgg-1p-mHY" id="T0K-JM-Bsr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="186.16071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CommitListTableViewCellBackground">
+            <color red="1" green="1" blue="1" alpha="0.94999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CommitListbackgroundLighter">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
