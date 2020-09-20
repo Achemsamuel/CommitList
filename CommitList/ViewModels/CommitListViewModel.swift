@@ -17,6 +17,7 @@ final class CommitListViewModel: NSObject {
     private(set) var rx_commits: BehaviorRelay<[CommitResponse]> = BehaviorRelay(value: [])
     private(set) var rx_setEmptyStateViewVisiblity: PublishSubject<EmptyStateReason> = PublishSubject()
     
+    
     override init() {
         super.init()
         initialSetup()
@@ -28,10 +29,6 @@ final class CommitListViewModel: NSObject {
     }
     
     public func fetchDataOnLoad() {
-        guard ReachabilityHelper.isInternetAvailable() else {
-            self.rx_setEmptyStateViewVisiblity.onNext(EmptyStateReason.noInternet)
-            return
-        }
         fetchCommits()
     }
     

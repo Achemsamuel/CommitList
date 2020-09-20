@@ -13,7 +13,7 @@ extension UITableView {
     func setEmptyView(title: String? = nil,
                       message: String? = nil,
                       attributedMessage: NSAttributedString? = nil,
-                      image_: UIImage? = nil,
+                      image_: UIImage? = UIImage(named: "Character-clumsy"),
                       imageSize: CGFloat = 120, show: Bool? = false) {
         let emptyView = UIView(frame: CGRect(x: self.center.x, y: self.center.y,
                                              width: self.bounds.size.width,
