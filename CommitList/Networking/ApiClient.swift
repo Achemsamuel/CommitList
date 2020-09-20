@@ -25,7 +25,7 @@ final class ApiClient: NSObject {
      Get
      ------------------------*/
     
-    func getGitHubCommits(query: String, params: [String:Any], completion: @escaping ((Result<[CommitResponse], Error>)-> Void)) {
+    func getGitHubCommits(params: [String:Any], completion: @escaping ((Result<[CommitResponse], Error>)-> Void)) {
         let url = HTTPEndPointResources.railsGitCommitsUrl
         get(urlSuffix: url, params: params) { result in
             switch result {

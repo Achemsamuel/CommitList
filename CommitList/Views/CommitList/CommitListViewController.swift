@@ -51,7 +51,16 @@ final class CommitListViewController: UIViewController {
     }
     
     private func setupEmptyStateObserver() {
-        
+        viewModel?.rx_setEmptyStateViewVisiblity.asObservable().subscribe(onNext: { [weak self] emptyStateReason in
+            switch emptyStateReason {
+            case .fetchError(let error):
+                 self?.tableView.setEmptyView(message: error, imageSize: 170)
+            case .noCommit:
+                self?.tableView.setEmptyView(message: Constants.noCommits, imageSize: 170)
+            case .noInternet:
+                self?.tableView.setEmptyView(message: Constants.noInternet, imageSize: 170)
+            }
+        }).disposed(by: disposeBag)
     }
     
     deinit {

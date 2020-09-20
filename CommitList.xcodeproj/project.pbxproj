@@ -36,6 +36,8 @@
 		D9145B7F25178F80001F1DC7 /* CommitVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B7E25178F80001F1DC7 /* CommitVM.swift */; };
 		D9145B812517906F001F1DC7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B802517906F001F1DC7 /* String+Extension.swift */; };
 		D9145B8425179922001F1DC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B8325179922001F1DC7 /* Constants.swift */; };
+		D9145B8625179E42001F1DC7 /* shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B8525179E42001F1DC7 /* shared.swift */; };
+		D9145B882517A44B001F1DC7 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B872517A44B001F1DC7 /* UIVIew+Extension.swift */; };
 		DAE5CB3592392F46030D8327 /* Pods_CommitListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054ACAC5225055061DCDD269 /* Pods_CommitListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,8 @@
 		D9145B7E25178F80001F1DC7 /* CommitVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitVM.swift; sourceTree = "<group>"; };
 		D9145B802517906F001F1DC7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D9145B8325179922001F1DC7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D9145B8525179E42001F1DC7 /* shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shared.swift; sourceTree = "<group>"; };
+		D9145B872517A44B001F1DC7 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,7 @@
 				D9145B61251784A2001F1DC7 /* Author.swift */,
 				D9145B63251784B6001F1DC7 /* Committer.swift */,
 				D9145B65251784CA001F1DC7 /* Parents.swift */,
+				D9145B8525179E42001F1DC7 /* shared.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				D9145B6825178505001F1DC7 /* UITableView+Extension.swift */,
 				D9145B7725178DA5001F1DC7 /* UITableViewCell+Extension.swift */,
 				D9145B802517906F001F1DC7 /* String+Extension.swift */,
+				D9145B872517A44B001F1DC7 /* UIVIew+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -553,11 +559,13 @@
 				D9145B7F25178F80001F1DC7 /* CommitVM.swift in Sources */,
 				D9145B582517814B001F1DC7 /* CommitListViewController.swift in Sources */,
 				D9145B62251784A2001F1DC7 /* Author.swift in Sources */,
+				D9145B8625179E42001F1DC7 /* shared.swift in Sources */,
 				D9145B812517906F001F1DC7 /* String+Extension.swift in Sources */,
 				D9145B1F25177E9E001F1DC7 /* AppDelegate.swift in Sources */,
 				D9145B5E2517819F001F1DC7 /* Verification.swift in Sources */,
 				D9145B8425179922001F1DC7 /* Constants.swift in Sources */,
 				D9145B6E25178A4A001F1DC7 /* ApiClient.swift in Sources */,
+				D9145B882517A44B001F1DC7 /* UIVIew+Extension.swift in Sources */,
 				D9145B66251784CA001F1DC7 /* Parents.swift in Sources */,
 				D9145B6C2517881C001F1DC7 /* ReachabilityHelper.swift in Sources */,
 				D9145B6025178492001F1DC7 /* Tree.swift in Sources */,
