@@ -56,7 +56,7 @@ extension UITableView {
         messageLabel.textAlignment = .center
         messageLabel.tag = 2
         
-        UIView.animate(withDuration: 2, animations: {
+        UIView.animate(withDuration: 3, animations: {
             
             image.transform = CGAffineTransform(rotationAngle: .pi / 10)
         }, completion: { (_) in
