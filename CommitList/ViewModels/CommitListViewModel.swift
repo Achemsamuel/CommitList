@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+import RxSwift
+import RxCocoa
+
+final class CommitListViewModel: NSObject {
+    
+    private var disposeBag: DisposeBag!
+    
+    override init() {
+        super.init()
+        initialSetup()
+    }
+    
+    private func initialSetup() {
+        disposeBag = DisposeBag()
+    }
+    
+    deinit {
+        disposeBag = nil
+        print(#function)
+    }
+    
+    
+}

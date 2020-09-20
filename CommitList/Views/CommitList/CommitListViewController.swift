@@ -14,6 +14,8 @@ final class CommitListViewController: UIViewController {
 
     private var disposeBag: DisposeBag!
     
+    @IBOutlet weak private(set) var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
