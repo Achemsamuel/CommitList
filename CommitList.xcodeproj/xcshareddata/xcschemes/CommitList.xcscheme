@@ -20,6 +20,20 @@
                ReferencedContainer = "container:CommitList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9145B3025177EA3001F1DC7"
+               BuildableName = "CommitListTests.xctest"
+               BlueprintName = "CommitListTests"
+               ReferencedContainer = "container:CommitList.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

@@ -14,6 +14,7 @@ final class CommitListViewController: UIViewController {
 
     private(set) var disposeBag: DisposeBag!
     private(set) var viewModel: CommitListViewModel?
+    private(set) var refreshControl: UIRefreshControl?
     
     @IBOutlet weak private(set) var tableView: UITableView!
     
@@ -21,6 +22,7 @@ final class CommitListViewController: UIViewController {
         super.viewDidLoad()
         setupViewModel()
         initialSetup()
+        setupEmptyStateObserver()
     }
     
     private func setupViewModel() {
@@ -29,15 +31,28 @@ final class CommitListViewController: UIViewController {
     
     private func initialSetup() {
         disposeBag = DisposeBag()
+        refreshControl = UIRefreshControl()
         setupTableView()
+        self.title = Constants.recentCommits
     }
 
     private func setupTableView() {
+        tableView.refreshControl = refreshControl
+        tableView.refreshControl?.beginRefreshing()
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.register(UINib(nibName: CommitListTableViewCell.NIB_NAME, bundle: nil), forCellReuseIdentifier: CommitListTableViewCell.Identifier)
         
+        viewModel?.rx_commits.bind(to: tableView.rx.items(cellIdentifier: CommitListTableViewCell.Identifier, cellType: CommitListTableViewCell.self)) {
+            [weak self] (row, commit, cell) in
+            self?.tableView.refreshControl?.endRefreshing()
+            cell.configureView(commit.toCommitVM(), row)
+        }.disposed(by: disposeBag)
     }
     
+    private func setupEmptyStateObserver() {
+        
+    }
     
     deinit {
         disposeBag = nil

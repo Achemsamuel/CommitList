@@ -14,7 +14,7 @@ import RxCocoa
 final class CommitListViewModel: NSObject {
     
     private var disposeBag: DisposeBag!
-    private(set) var rx_receipts: BehaviorRelay<[CommitResponse]> = BehaviorRelay(value: [])
+    private(set) var rx_commits: BehaviorRelay<[CommitResponse]> = BehaviorRelay(value: [])
     private(set) var rx_setEmptyStateViewVisiblity: PublishSubject<Bool> = PublishSubject()
     
     override init() {
