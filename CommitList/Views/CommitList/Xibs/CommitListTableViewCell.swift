@@ -37,7 +37,7 @@ final class CommitListTableViewCell: UITableViewCell {
     
     func configureView(_ commitVM: CommitVM, _ row: Int) {
         self.row = row
-        userImage.kf.setImage(with: commitVM.authorImageUrl)
+        //userImage.kf.setImage(with: commitVM.authorImageUrl, placeholder: UIImage(systemName: "person.circle"))
         userName.text = commitVM.authorName
         date.text = commitVM.date
         verifiedTag.text = "Verified: \(commitVM.verified)"

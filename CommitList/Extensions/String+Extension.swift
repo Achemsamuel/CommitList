@@ -11,9 +11,12 @@ import Foundation
 extension String {
     func toDateString() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "d MMM y"
-        guard let date = dateFormatter.date(from: self) else {return ""}
-        return dateFormatter.string(from: date)
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let date = dateFormatter.date(from: self) ?? Date()
+        
+        let formatter = RelativeDateTimeFormatter()
+        formatter.unitsStyle = .full
+        return formatter.localizedString(for: date, relativeTo: Date())
     }
-
+    
 }

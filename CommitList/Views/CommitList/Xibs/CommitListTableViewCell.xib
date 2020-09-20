@@ -24,22 +24,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="46"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-7t-Ero">
-                                        <rect key="frame" x="15" y="0.0" width="0.0" height="31"/>
+                                        <rect key="frame" x="15" y="3" width="0.0" height="31"/>
                                         <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="13"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgg-1p-mHY">
-                                        <rect key="frame" x="265" y="0.0" width="0.0" height="31"/>
+                                        <rect key="frame" x="265" y="3" width="0.0" height="34"/>
                                         <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="13"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="CommitListbackgroundLighter"/>
                                 <constraints>
-                                    <constraint firstItem="njg-7t-Ero" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="top" id="398-SL-qac"/>
-                                    <constraint firstItem="fgg-1p-mHY" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="top" id="GX1-3R-UMP"/>
+                                    <constraint firstItem="njg-7t-Ero" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="top" constant="3" id="398-SL-qac"/>
+                                    <constraint firstItem="fgg-1p-mHY" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="top" constant="3" id="GX1-3R-UMP"/>
                                     <constraint firstAttribute="trailing" secondItem="fgg-1p-mHY" secondAttribute="trailing" constant="15" id="X3g-f9-NwI"/>
-                                    <constraint firstItem="fgg-1p-mHY" firstAttribute="bottom" secondItem="njg-7t-Ero" secondAttribute="bottom" id="hSv-ty-82l"/>
+                                    <constraint firstItem="fgg-1p-mHY" firstAttribute="bottom" secondItem="njg-7t-Ero" secondAttribute="bottom" constant="3" id="hSv-ty-82l"/>
                                     <constraint firstItem="njg-7t-Ero" firstAttribute="leading" secondItem="CzR-ZY-hot" secondAttribute="leading" constant="15" id="rKM-iM-Fee"/>
                                 </constraints>
                             </view>
@@ -59,7 +59,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="CommitListBackground"/>
+                                <color key="backgroundColor" name="CommitListTableViewCellBackground"/>
                                 <constraints>
                                     <constraint firstItem="Cvb-UX-1c1" firstAttribute="leading" secondItem="HJE-wc-Nbd" secondAttribute="leading" constant="15" id="207-14-1cf"/>
                                     <constraint firstAttribute="trailing" secondItem="srO-z8-0c8" secondAttribute="trailing" constant="10" id="95S-EI-t9C"/>
@@ -72,7 +72,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="CommitListTableViewCellBackground"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="HJE-wc-Nbd" secondAttribute="trailing" id="0zc-Dj-k0s"/>
                             <constraint firstItem="HJE-wc-Nbd" firstAttribute="top" secondItem="CzR-ZY-hot" secondAttribute="bottom" constant="-15" id="6K0-95-Vix"/>
@@ -80,7 +80,7 @@
                             <constraint firstItem="CzR-ZY-hot" firstAttribute="top" secondItem="Yr5-Ps-7M6" secondAttribute="top" id="hnU-VQ-cUF"/>
                             <constraint firstItem="HJE-wc-Nbd" firstAttribute="leading" secondItem="Yr5-Ps-7M6" secondAttribute="leading" id="jCF-9o-bev"/>
                             <constraint firstAttribute="trailing" secondItem="CzR-ZY-hot" secondAttribute="trailing" id="sbK-ax-ihj"/>
-                            <constraint firstItem="njg-7t-Ero" firstAttribute="bottom" secondItem="HJE-wc-Nbd" secondAttribute="top" id="tfN-aQ-oyt"/>
+                            <constraint firstItem="njg-7t-Ero" firstAttribute="bottom" secondItem="HJE-wc-Nbd" secondAttribute="top" constant="3" id="tfN-aQ-oyt"/>
                             <constraint firstAttribute="bottom" secondItem="HJE-wc-Nbd" secondAttribute="bottom" id="vq2-X8-JvN"/>
                         </constraints>
                     </view>
@@ -109,11 +109,11 @@
     </objects>
     <resources>
         <image name="Character-clumsy" width="158" height="125"/>
-        <namedColor name="CommitListBackground">
-            <color red="0.97299998998641968" green="0.98000001907348633" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="CommitListTableViewCellBackground">
+            <color red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CommitListbackgroundLighter">
-            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
