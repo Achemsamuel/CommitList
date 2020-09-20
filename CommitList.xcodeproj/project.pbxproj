@@ -30,6 +30,11 @@
 		D9145B6E25178A4A001F1DC7 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B6D25178A4A001F1DC7 /* ApiClient.swift */; };
 		D9145B7025178A59001F1DC7 /* HttpEndPointResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B6F25178A59001F1DC7 /* HttpEndPointResources.swift */; };
 		D9145B7225178A7E001F1DC7 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B7125178A7E001F1DC7 /* ApiError.swift */; };
+		D9145B7525178D5E001F1DC7 /* CommitListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B7325178D5E001F1DC7 /* CommitListTableViewCell.swift */; };
+		D9145B7625178D5E001F1DC7 /* CommitListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9145B7425178D5E001F1DC7 /* CommitListTableViewCell.xib */; };
+		D9145B7825178DA5001F1DC7 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B7725178DA5001F1DC7 /* UITableViewCell+Extension.swift */; };
+		D9145B7F25178F80001F1DC7 /* CommitVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B7E25178F80001F1DC7 /* CommitVM.swift */; };
+		D9145B812517906F001F1DC7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9145B802517906F001F1DC7 /* String+Extension.swift */; };
 		DAE5CB3592392F46030D8327 /* Pods_CommitListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054ACAC5225055061DCDD269 /* Pods_CommitListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +92,11 @@
 		D9145B6D25178A4A001F1DC7 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		D9145B6F25178A59001F1DC7 /* HttpEndPointResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpEndPointResources.swift; sourceTree = "<group>"; };
 		D9145B7125178A7E001F1DC7 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		D9145B7325178D5E001F1DC7 /* CommitListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitListTableViewCell.swift; sourceTree = "<group>"; };
+		D9145B7425178D5E001F1DC7 /* CommitListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitListTableViewCell.xib; sourceTree = "<group>"; };
+		D9145B7725178DA5001F1DC7 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		D9145B7E25178F80001F1DC7 /* CommitVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitVM.swift; sourceTree = "<group>"; };
+		D9145B802517906F001F1DC7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +221,7 @@
 		D9145B4F251780C6001F1DC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D9145B7D25178EEE001F1DC7 /* VMs */,
 				D9145B5925178176001F1DC7 /* CommitResponse.swift */,
 				D9145B5B2517818D001F1DC7 /* Commit.swift */,
 				D9145B5D2517819F001F1DC7 /* Verification.swift */,
@@ -251,6 +262,8 @@
 		D9145B5625178138001F1DC7 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				D9145B7325178D5E001F1DC7 /* CommitListTableViewCell.swift */,
+				D9145B7425178D5E001F1DC7 /* CommitListTableViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -259,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				D9145B6825178505001F1DC7 /* UITableView+Extension.swift */,
+				D9145B7725178DA5001F1DC7 /* UITableViewCell+Extension.swift */,
+				D9145B802517906F001F1DC7 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,6 +284,14 @@
 				D9145B6B2517881C001F1DC7 /* ReachabilityHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D9145B7D25178EEE001F1DC7 /* VMs */ = {
+			isa = PBXGroup;
+			children = (
+				D9145B7E25178F80001F1DC7 /* CommitVM.swift */,
+			);
+			path = VMs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9145B7625178D5E001F1DC7 /* CommitListTableViewCell.xib in Resources */,
 				D9145B2B25177EA3001F1DC7 /* LaunchScreen.storyboard in Resources */,
 				D9145B2825177EA3001F1DC7 /* Assets.xcassets in Resources */,
 				D9145B2625177E9E001F1DC7 /* Main.storyboard in Resources */,
@@ -512,16 +536,20 @@
 			files = (
 				D9145B5C2517818D001F1DC7 /* Commit.swift in Sources */,
 				D9145B552517812C001F1DC7 /* CommitListViewModel.swift in Sources */,
+				D9145B7525178D5E001F1DC7 /* CommitListTableViewCell.swift in Sources */,
 				D9145B64251784B6001F1DC7 /* Committer.swift in Sources */,
 				D9145B7025178A59001F1DC7 /* HttpEndPointResources.swift in Sources */,
+				D9145B7F25178F80001F1DC7 /* CommitVM.swift in Sources */,
 				D9145B582517814B001F1DC7 /* CommitListViewController.swift in Sources */,
 				D9145B62251784A2001F1DC7 /* Author.swift in Sources */,
+				D9145B812517906F001F1DC7 /* String+Extension.swift in Sources */,
 				D9145B1F25177E9E001F1DC7 /* AppDelegate.swift in Sources */,
 				D9145B5E2517819F001F1DC7 /* Verification.swift in Sources */,
 				D9145B6E25178A4A001F1DC7 /* ApiClient.swift in Sources */,
 				D9145B66251784CA001F1DC7 /* Parents.swift in Sources */,
 				D9145B6C2517881C001F1DC7 /* ReachabilityHelper.swift in Sources */,
 				D9145B6025178492001F1DC7 /* Tree.swift in Sources */,
+				D9145B7825178DA5001F1DC7 /* UITableViewCell+Extension.swift in Sources */,
 				D9145B5A25178176001F1DC7 /* CommitResponse.swift in Sources */,
 				D9145B7225178A7E001F1DC7 /* ApiError.swift in Sources */,
 				D9145B2125177E9E001F1DC7 /* SceneDelegate.swift in Sources */,
