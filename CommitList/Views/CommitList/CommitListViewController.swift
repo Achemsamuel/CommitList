@@ -61,6 +61,7 @@ final class CommitListViewController: UIViewController {
             case .noInternet:
                 self?.tableView.setEmptyView(message: Constants.noInternet, imageSize: 170)
             }
+            self?.tableView.refreshControl?.endRefreshing()
         }).disposed(by: disposeBag)
     }
     

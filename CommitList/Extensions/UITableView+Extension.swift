@@ -13,7 +13,7 @@ extension UITableView {
     func setEmptyView(title: String? = nil,
                       message: String? = nil,
                       attributedMessage: NSAttributedString? = nil,
-                      image_: UIImage? = nil,
+                      image_: UIImage? = UIImage(named: "Character-clumsy"),
                       imageSize: CGFloat = 120, show: Bool? = false) {
         let emptyView = UIView(frame: CGRect(x: self.center.x, y: self.center.y,
                                              width: self.bounds.size.width,
@@ -56,7 +56,7 @@ extension UITableView {
         messageLabel.textAlignment = .center
         messageLabel.tag = 2
         
-        UIView.animate(withDuration: 2, animations: {
+        UIView.animate(withDuration: 3, animations: {
             
             image.transform = CGAffineTransform(rotationAngle: .pi / 10)
         }, completion: { (_) in
