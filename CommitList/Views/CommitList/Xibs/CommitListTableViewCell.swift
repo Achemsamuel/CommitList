@@ -16,7 +16,6 @@ final class CommitListTableViewCell: UITableViewCell {
     @IBOutlet weak private(set) var commitListCellContentView: UIView!
     @IBOutlet weak private(set) var date: UILabel!
     @IBOutlet weak private(set) var verifiedTag: UILabel!
-    @IBOutlet weak private(set) var userImage: UIImageView!
     @IBOutlet weak private(set) var userName: UILabel!
     @IBOutlet weak private(set) var dateView: UIView!
     @IBOutlet weak private(set) var userView: UIView!
@@ -33,19 +32,13 @@ final class CommitListTableViewCell: UITableViewCell {
         commitListCellContentView.layer.cornerRadius = 8
         userView.layer.cornerRadius = 8
         dateView.roundCorners(corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner], cornerRadius: 9)
-        userImage.layer.cornerRadius = userName.frame.width/2
+        authorImage.layer.cornerRadius = authorImage.frame.width/2
     }
     
     func configureView(_ commitVM: CommitVM, _ row: Int) {
         self.row = row
-        authorImage.sd_setImage(with: commitVM.authorImageUrl, placeholderImage: nil, options: .retryFailed) { [weak self] image, error, cache, url in
-            guard error == nil else {
-                return
-            }
-            let image = image
-            self?.userImage.image = image
-        }
-//        userImage.sd_setImage(with: commitVM.authorImageUrl, placeholderImage: UIImage(systemName: "person.circle"), options: SDWebImageOptions.retryFailed)
+        authorImage.sd_imageIndicator = sd_imageIndicator
+        authorImage.sd_setImage(with: commitVM.authorImageUrl, placeholderImage: nil, options: .retryFailed)
         userName.text = commitVM.authorName
         date.text = commitVM.date
         verifiedTag.text = "Verified: \(commitVM.verified)"
