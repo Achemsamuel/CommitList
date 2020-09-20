@@ -24,20 +24,24 @@ final class CommitListViewModel: NSObject {
     
     private func initialSetup() {
         disposeBag = DisposeBag()
+        fetchDataOnLoad()
     }
     
-    private func checkForInternetAccess() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
-            if !ReachabilityHelper.isInternetAvailable() {
-                //at this point handle error
-            }
+    private func fetchDataOnLoad() {
+        guard ReachabilityHelper.isInternetAvailable() else {
+            self.rx_setEmptyStateViewVisiblity.onNext(true)
+            return
         }
+        fetchCommits()
+    }
+    
+    private func fetchCommits() {
+        
     }
     
     deinit {
         disposeBag = nil
-        print(#function)
+        print(#function, String(describing: CommitListViewModel.self))
     }
-    
     
 }

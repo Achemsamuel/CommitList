@@ -12,29 +12,35 @@ import RxCocoa
 
 final class CommitListViewController: UIViewController {
 
-    private var disposeBag: DisposeBag!
+    private(set) var disposeBag: DisposeBag!
+    private(set) var viewModel: CommitListViewModel?
     
     @IBOutlet weak private(set) var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupViewModel()
+        initialSetup()
+    }
+    
+    private func setupViewModel() {
+        viewModel = CommitListViewModel()
     }
     
     private func initialSetup() {
-        
-    }
-    
-    private func setupObservers() {
         disposeBag = DisposeBag()
+        setupTableView()
     }
 
     private func setupTableView() {
+        tableView.estimatedRowHeight = 120
+        tableView.rowHeight = UITableView.automaticDimension
         
     }
     
     
     deinit {
         disposeBag = nil
+        print(#function, String(describing: CommitListViewController.self))
     }
 }
